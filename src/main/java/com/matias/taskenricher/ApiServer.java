@@ -29,7 +29,7 @@ public class ApiServer {
         // o una lógica de ruteo más compleja en TasksHandler (como el path.matches).
         server.setExecutor(null);
         server.start();
-        System.out.println("Servidor API de Tareas Enriquecidas iniciado en http://localhost:" + port);
+        System.out.println("Servidor API de Tareas Enriquecidas iniciado en http://localhost:" + port + "/api/tasks");
     }
 
     class TasksHandler implements HttpHandler {
